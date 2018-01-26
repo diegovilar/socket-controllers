@@ -1,6 +1,6 @@
 import {MetadataBuilder} from "./metadata-builder/MetadataBuilder";
 import {ActionMetadata} from "./metadata/ActionMetadata";
-import {ClassTransformOptions, plainToClass, classToPlain} from "class-transformer";
+import {ClassTransformOptions, plainToClass, classToPlain} from "@trese/class-transformer";
 import {ActionTypes} from "./metadata/types/ActionTypes";
 import {ParamMetadata} from "./metadata/ParamMetadata";
 import {ParameterParseJsonError} from "./error/ParameterParseJsonError";
@@ -124,7 +124,7 @@ export class SocketControllerExecutor {
     }
 
     private handleAction(action: ActionMetadata, options: { socket?: any, data?: any }): Promise<any> {
-        
+
         // compute all parameters
         const paramsPromises = action.params
             .sort((param1, param2) => param1.index - param2.index)

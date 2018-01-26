@@ -1,4 +1,4 @@
-import {ClassTransformOptions} from "class-transformer";
+import {ClassTransformOptions} from "@trese/class-transformer";
 
 /**
  * Socket controllers initialization options.
@@ -27,5 +27,5 @@ export interface SocketControllersOptions {
      * This operation is being executed when parsing user parameters.
      */
     plainToClassTransformOptions?: ClassTransformOptions;
-    
+
 }

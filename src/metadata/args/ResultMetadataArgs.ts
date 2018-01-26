@@ -1,5 +1,5 @@
 import {ResultType} from "../types/ResultTypes";
-import {ClassTransformOptions} from "class-transformer";
+import {ClassTransformOptions} from "@trese/class-transformer";
 
 /**
  */
@@ -12,7 +12,7 @@ export interface ResultMetadataArgs {
     /**
      */
     target: Function;
-    
+
     /**
      */
     method: string;
@@ -23,5 +23,5 @@ export interface ResultMetadataArgs {
     type: ResultType;
 
     classTransformOptions?: ClassTransformOptions;
-    
+
 }

@@ -4,7 +4,7 @@ import {ActionMetadataArgs} from "./metadata/args/ActionMetadataArgs";
 import {ActionTypes} from "./metadata/types/ActionTypes";
 import {ParamMetadataArgs} from "./metadata/args/ParamMetadataArgs";
 import {ParamTypes} from "./metadata/types/ParamTypes";
-import {ClassTransformOptions} from "class-transformer";
+import {ClassTransformOptions} from "@trese/class-transformer";
 import {MiddlewareMetadataArgs} from "./metadata/args/MiddlewareMetadataArgs";
 import {ResultMetadataArgs} from "./metadata/args/ResultMetadataArgs";
 import {ResultTypes} from "./metadata/types/ResultTypes";

@@ -1,7 +1,7 @@
 import {ActionMetadata} from "./ActionMetadata";
 import {ResultType} from "./types/ResultTypes";
 import {ResultMetadataArgs} from "./args/ResultMetadataArgs";
-import {ClassTransformOptions} from "class-transformer";
+import {ClassTransformOptions} from "@trese/class-transformer";
 
 export class ResultMetadata {
 
@@ -34,7 +34,7 @@ export class ResultMetadata {
     // -------------------------------------------------------------------------
     // Public Methods
     // -------------------------------------------------------------------------
-    
+
     constructor(action: ActionMetadata, args: ResultMetadataArgs) {
         this.actionMetadata = action;
         this.target = args.target;

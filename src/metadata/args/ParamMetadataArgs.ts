@@ -1,5 +1,5 @@
 import {ParamTypes} from "../types/ParamTypes";
-import {ClassTransformOptions} from "class-transformer";
+import {ClassTransformOptions} from "@trese/class-transformer";
 
 /**
  * Controller metadata used to storage information about registered parameters.

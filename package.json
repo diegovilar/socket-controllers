@@ -1,7 +1,7 @@
 {
-  "name": "socket-controllers",
+  "name": "@trese/socket-controllers",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4-rc.2",
   "description": "Use class-based controllers to handle websocket events",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -9,12 +9,22 @@
     "name": "Umed Khudoiberdiev",
     "email": "pleerock.me@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "Diego Vilar",
+      "email": "diegovilar@gmail.com",
+      "url": "https://github.com/diegovilar"
+    }
+  ],
+  "publishConfig": {
+    "registry": "https://npm.tre-se.gov.br"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pleerock/socket-controllers.git"
+    "url": "https://github.com/diegovilar/socket-controllers.git"
   },
   "bugs": {
-    "url": "https://github.com/pleerock/socket-controllers/issues"
+    "url": "https://github.com/diegovilar/socket-controllers/issues"
   },
   "main": "index.js",
   "tags": [
@@ -26,7 +36,7 @@
     "socket-controllers"
   ],
   "dependencies": {
-    "class-transformer": "^0.1.6",
+    "@trese/class-transformer": "^0.1.9-rc.2",
     "reflect-metadata": "^0.1.10",
     "socket.io": "^2.0.1"
   },
@@ -63,6 +73,8 @@
     "typescript": "^2.3.2"
   },
   "scripts": {
-    "test": "gulp tests"
+    "test": "gulp tests",
+    "build": "gulp package",
+    "publishPackage": "gulp publish"
   }
 }

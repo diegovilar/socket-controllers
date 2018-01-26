@@ -1,7 +1,7 @@
 import {ActionMetadata} from "./ActionMetadata";
 import {ParamMetadataArgs} from "./args/ParamMetadataArgs";
 import {ParamTypes} from "./types/ParamTypes";
-import {ClassTransformOptions} from "class-transformer";
+import {ClassTransformOptions} from "@trese/class-transformer";
 
 export class ParamMetadata {
 
